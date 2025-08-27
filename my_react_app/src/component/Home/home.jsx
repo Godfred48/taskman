@@ -1,9 +1,12 @@
 import Navbar from './navbar';
-import '../style/home.css';
+import Hero from './hero';
+import Services from './feature';
 const Home = () => {
     return ( 
         <div>
             <Navbar />
+            <Hero />
+            <Services />
         </div>
         
      );

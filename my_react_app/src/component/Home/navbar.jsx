@@ -37,6 +37,17 @@ const Navbar = () => {
               </AnimatePresence>
               </motion.button>
         </section>
+
+        {/* Desktop Nav */}
+        <section className="nav-link desktop">
+            <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Features</li>
+            <li>Contact</li>
+            </ul>
+        </section>
+
         <section className={`nav-link ${isOpen ? "show" : "hide"}`}>
         <AnimatePresence mode="wait">
             {isOpen && (

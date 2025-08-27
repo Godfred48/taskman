@@ -20,6 +20,14 @@ nav{
     border-bottom: 1px solid var(--font-color3);
 }
 
+.nav-link{
+    display:none;
+}
+
+.nav-link.desktop{
+    display: flex;
+}
+
 nav section ul{
     display:flex;
     text-decoration: none;
@@ -83,10 +91,140 @@ nav section button p{
     nav section button:hover{
     background-color: var(--font-color4);
     }
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 500px; /* fixed hero height */
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+         overflow: hidden; 
+      }
+      
+      .heroImage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover; /* fill and crop if necessary */
+        z-index: 1;
+      }
+      
+      .backgroundOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 1, 2, 0.6); /* dark blue overlay */
+        z-index: 2;
+    }
+
+      
+    .bigHeading{
+        position:absolute;
+        display:block;
+        z-index: 3;
+        text-align: center;
+        top:20%;
+        font-family: var(--headerFont);
+        color:whitesmoke;
+        font-size:1.5rem;
+    }
+
+    .heroButton{
+        position:absolute;
+        display: grid;
+        z-index: 3;
+        top:60%;
+        grid-template-columns: 1fr 1fr;
+        gap:20px;
+        
+    }
+
+    .button1{
+        height:50px;
+        width:150px;
+        font-family: var(--paragraphFont);
+        font-size: 1.5rem;
+        font-weight: bold;
+        color:var(--font-color4);
+        background-color: var(--font-color3);
+    }
+
+    .button2{
+        height:50px;
+        width:150px;
+        font-family: var(--paragraphFont);
+        font-size: 1.5rem;
+        font-weight: bold;
+        color:var(--font-color3);
+        background-color: whitesmoke;
+    }
+
+    .heroButton button:hover{
+        cursor: pointer;
+    }
+
+    .cardContainer{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap : 20px;
+        justify-content: center;
+        align-items: center;
+        margin:20px;
+       
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: whitesmoke;
+        color: var(--f);
+        border-radius: 10px;
+        width: 100%;
+        height: 280px;
+        border: 1px solid var(--font-color3);
+        
+        /* Stronger shadow */
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2), /* dark base shadow */
+                    0 4px 12px rgba(52, 93, 104, 0.3); /* cyan glow effect */
+    }
+
+    .card aside{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: var(--paragraphFont);
+        color:var(--font-color3);
+        font-size :20px;
+    }
+
+    .card aside img{
+        margin-bottom: 5px;
+
+    }
+
+    .containerFeature h1{
+        font-family: var(--headerFont);
+        color: var(--font-color3);
+        text-align: center;
+    }
 
 
 
-@media (max-width:600px){
+      
+      
+      
+      
+  
+
+
+
+
+@media (max-width:728px){
     .menuButton{
         display: block;
         border: 0px;
@@ -155,12 +293,30 @@ nav section button p{
         display: none;
     }
 
+    .nav-link.desktop{
+        display: none;
+    }
+
     .loginButton.show{
         display: block;
     }
 
     .loginButton.hide{
         display: none;
+    }
+
+    .cardContainer{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap : 20px;
+        justify-content: center;
+        align-items: center;
+        margin:20px;
+    }
+
+    .heroButton{
+       margin-top:30px;
+        
     }
 
 
