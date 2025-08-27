@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="110" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">TaskMan Logo</title>
+  <desc id="desc">A clean circular checkmark icon above the word TaskMan.</desc>
+  <defs>
+    <style>
+      .primary { stroke: #001838; }
+      .fill-primary { fill: #001838; }
+      .text { fill: #001838; font-family: Inter, Arial, Helvetica, sans-serif; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- Icon group -->
+  <g transform="translate(0, 20)">
+    <!-- Circle -->
+    <circle cx="256" cy="192" r="116" class="primary" stroke-width="18" fill="none"/>
+    <!-- Checkmark -->
+    <path d="M198 190 L242 234 L326 150" fill="none" class="primary" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="256" y="400" text-anchor="middle" font-size="72" class="text">TaskMan</text>
+</svg>
