@@ -1,9 +1,9 @@
-body{
+.login-form{
     display:grid;
     justify-content: center;
     align-items:center;
     height: 100vh;
-    background-color:#000929;
+ 
 }
 
 .container{

@@ -1,0 +1,169 @@
+:root{
+    --headerFont: "Rubik Distressed", system-ui;
+    --paragraphFont : "Barlow Semi Condensed", sans-serif;
+    --font-color1: #38d6ff1a;
+    --font-color2: #98c5e9;
+    --font-color3: #001838;
+    --font-color4: #38d6ff;
+}
+
+body{
+   margin: 0;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--font-color2);
+    border-bottom: 1px solid var(--font-color3);
+}
+
+nav section ul{
+    display:flex;
+    text-decoration: none;
+    list-style: none;
+    font-size:20px ;
+    font-weight:bold;
+    padding : 3px 10px;
+    margin :0;
+    font-family: var(--paragraphFont);
+}
+
+nav section ul li{
+    display:flex;
+    text-decoration: none;
+    list-style: none;
+    font-size:20px ;
+    font-weight:bold;
+    padding : 3px 10px;
+    margin :0;
+    font-family: var(--paragraphFont);
+    color:var(--font-color3);
+} 
+
+nav section ul li:hover{
+ background-color: whitesmoke;
+} 
+
+.logo{
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+nav section button{
+    width:100px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--font-color2);
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+}
+
+nav section button p{
+   margin-left:5px;
+   font-family: var(--paragraphFont);
+   color:var(--font-color3);
+   font-weight: bold;
+   font-size: 20px;
+
+}
+
+.menuButton{
+    display: none;
+    border: 0px;
+    font-size: 30px;
+    color:var(--font-color3);
+}
+
+    nav section button:hover{
+    background-color: var(--font-color4);
+    }
+
+
+
+@media (max-width:600px){
+    .menuButton{
+        display: block;
+        border: 0px;
+        font-size: 30px;
+        color:var(--font-color3);
+
+    }
+
+    nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--font-color2);
+        border-bottom: 1px solid var(--font-color3);
+    }
+
+    nav section ul{
+        display:block;
+        text-decoration: none;
+        list-style: none;
+        font-size:20px ;
+        font-weight:bold;
+        padding : 5px 15px;
+        margin :0;
+        font-family: var(--paragraphFont);
+    }
+    nav section ul li{
+        display:flex;
+        text-decoration: none;
+        list-style: none;
+        font-size:20px ;
+        font-weight:bold;
+        padding : 8px 10px;
+        margin :5px 0;
+        font-family: var(--paragraphFont);
+        color:var(--font-color3);
+        border-bottom: 1px solid var(--font-color3);
+    } 
+
+    .logo{
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .loginButton{
+        padding: 0 15px;
+        margin: 5px 0;
+    }
+    
+    nav button.login:hover {
+        background-color: var(--font-color4);
+    }
+
+    nav button.menuButton:hover {
+        background-color: var(--font-color2);
+    }
+
+    .nav-link.show{
+        display: block;
+    }
+
+    .nav-link.hide{
+        display: none;
+    }
+
+    .loginButton.show{
+        display: block;
+    }
+
+    .loginButton.hide{
+        display: none;
+    }
+
+
+    
+
+}

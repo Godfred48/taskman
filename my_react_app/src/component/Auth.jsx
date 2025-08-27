@@ -2,7 +2,7 @@ import userIcon from "./images/user-icon.svg";
 import { useState } from "react";
 import users from "./script/info";
 import { useNavigate } from "react-router-dom";
-import { createContext } from "react";
+import { useContext } from "react";
 import './style/Auth.css';
 import { AuthContext } from "../context/AuthContext";
 const AuthPage = () => {
@@ -55,6 +55,7 @@ const AuthPage = () => {
     }
 
     return (  
+        <form className="login-form">
         <div class="container">
             <div class="upperboarder">
                     <p></p>
@@ -94,6 +95,7 @@ const AuthPage = () => {
             </div>
 
         </div>
+        </form>
     );
 }
  

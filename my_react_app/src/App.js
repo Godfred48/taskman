@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./component/TaskInput";
+import Home from "./component/Home/home";
 import AuthPage from "./component/Auth";
 import {BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 
