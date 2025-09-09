@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./component/Home/home";
-import AuthPage from "./component/Auth";
+import AuthPage from "./component/Authentication/Auth";
 import {HashRouter as Router,Routes,Route } from 'react-router-dom';
 
 function App() {

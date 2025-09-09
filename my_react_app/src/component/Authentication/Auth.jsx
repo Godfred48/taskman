@@ -1,9 +1,9 @@
-import userIcon from "./images/user-icon.svg";
+import userIcon from "../images/user-icon.svg";
 import { useState } from "react";
-import users from "./script/info";
+import users from "../script/info";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import './style/Auth.css';
+import '../style/Auth.css';
 import { AuthContext } from "../context/AuthContext";
 const AuthPage = () => {
 

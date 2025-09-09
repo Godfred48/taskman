@@ -213,6 +213,37 @@ nav section button p{
         text-align: center;
     }
 
+    .main{
+        text-align: center;
+        font-size: 30px;
+        border-bottom: 2px solid var(--font-color2);
+    }
+
+    .main .header{
+        color: var(--font-color3);
+        font-family: var(--headerFont);
+    }
+
+    .about{
+        background-color: var(--font-color3);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-top-left-radius: 100px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap:20px;
+        font-family: var(--paragraphFont);
+        font-size: 20px;
+    } 
+
+    .section1{
+        margin:30px;
+        border-top-left-radius: 100px;
+        border: 1px solid var(--font-color1);
+        color:var(--font-color4);
+    }
+
 
 
       
@@ -318,6 +349,11 @@ nav section button p{
        margin-top:30px;
         
     }
+
+    .about{
+        grid-template-columns: 1fr;
+        gap:5px;
+    } 
 
 
     
