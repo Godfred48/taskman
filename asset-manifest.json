@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/taskman/static/css/main.a352bdc1.css",
-    "main.js": "/taskman/static/js/main.797ca092.js",
+    "main.css": "/taskman/static/css/main.a4630663.css",
+    "main.js": "/taskman/static/js/main.c6787545.js",
     "static/js/592.77751a5b.chunk.js": "/taskman/static/js/592.77751a5b.chunk.js",
     "static/media/home.webp": "/taskman/static/media/home.73127e707ed52989dd2e.webp",
     "index.html": "/taskman/index.html",
@@ -11,12 +11,12 @@
     "static/media/data.svg": "/taskman/static/media/data.9517da92c618e02609674b55e9a30c93.svg",
     "static/media/login-icon.svg": "/taskman/static/media/login-icon.764de6d9c602d2f84106a9c2c6e309a4.svg",
     "static/media/user-icon.svg": "/taskman/static/media/user-icon.580c3b1274b617400bb250ee3efa4969.svg",
-    "main.a352bdc1.css.map": "/taskman/static/css/main.a352bdc1.css.map",
-    "main.797ca092.js.map": "/taskman/static/js/main.797ca092.js.map",
+    "main.a4630663.css.map": "/taskman/static/css/main.a4630663.css.map",
+    "main.c6787545.js.map": "/taskman/static/js/main.c6787545.js.map",
     "592.77751a5b.chunk.js.map": "/taskman/static/js/592.77751a5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a352bdc1.css",
-    "static/js/main.797ca092.js"
+    "static/css/main.a4630663.css",
+    "static/js/main.c6787545.js"
   ]
 }
