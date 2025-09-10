@@ -244,6 +244,50 @@ nav section button p{
         color:var(--font-color4);
     }
 
+    .footermain{
+        display: grid;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--font-color3);
+    }
+
+    .footerContainer{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        color:var(--font-color4);
+        font-family: var(--paragraphFont);
+    }
+
+    .footerContainer h3{
+        color:var(--font-color4);
+        font-family: var(--headerFont);
+    }
+
+    .socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .date{
+        color:var(--font-color4);
+        font-size: 20px;
+        font-family: var(--paragraphFont);
+    }
+
+    .footerContainer ul{
+        list-style-type: none;
+        text-align: center;
+        margin-right: 40px;
+        font-size: 18px;
+     }
+
 
 
       
@@ -255,7 +299,7 @@ nav section button p{
 
 
 
-@media (max-width:728px){
+@media (max-width:800px){
     .menuButton{
         display: block;
         border: 0px;
@@ -354,6 +398,27 @@ nav section button p{
         grid-template-columns: 1fr;
         gap:5px;
     } 
+
+    .footerContainer{
+        display:grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        color:var(--font-color4);
+        font-family: var(--paragraphFont);
+    }
+
+    .footerContainer ul{
+       list-style-type: none;
+       text-align: center;
+       margin-right: 40px;
+       font-size: 18px;
+    }
+
+
+
 
 
     
