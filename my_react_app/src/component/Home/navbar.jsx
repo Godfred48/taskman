@@ -4,6 +4,7 @@ import loginIcon from '../images/login-icon.svg'
 import '../style/home.css';
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from 'react-scroll';
+import { Link as RouterLink} from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -68,7 +69,9 @@ const Navbar = () => {
         </AnimatePresence>
         </section>
         <section className={`loginButton ${isOpen ? "show" :"hide"}`}>
-            <button className="login"><img src={loginIcon} alt="iconlogo"/><p>Login</p></button>
+            <RouterLink to="/login" className="login-link">
+             <button className="login"><img src={loginIcon} alt="iconlogo"/><p>Login</p></button>
+            </RouterLink>
         </section>
         
         

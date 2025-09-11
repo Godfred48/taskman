@@ -1,5 +1,6 @@
 import heroImage from '../images/home.webp';
 import {motion} from "framer-motion";
+import { Link as RouterLink } from "react-router-dom";
 const Hero = () => {
     return (  
         <div className="hero">
@@ -26,13 +27,15 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5, ease: "easeOut" }} // appear after heading
             >
-                <motion.button 
-                    className="button1"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    <span>Get Started</span>
-                </motion.button>
+                <RouterLink to="/login">
+                    <motion.button 
+                            className="button1"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            <span>Get Started</span>
+                    </motion.button>
+                </RouterLink>
 
                 <motion.button 
                     className="button2"
