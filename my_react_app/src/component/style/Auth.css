@@ -1,3 +1,36 @@
+:root{
+    --headerFont: "Rubik Distressed", system-ui;
+    --paragraphFont : "Barlow Semi Condensed", sans-serif;
+    --font-color1: #38d6ff1a;
+    --font-color2: #98c5e9;
+    --font-color3: #001838;
+    --font-color4: #38d6ff;
+}
+
+.AuthNav{
+    background-color: var(--font-color2);
+    height:100px;
+    display: grid;
+    grid-template-columns: 1fr 13fr;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+}
+
+.arrowback{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskman{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+
 .login-form{
     display:grid;
     justify-content: center;
