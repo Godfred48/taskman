@@ -15,7 +15,7 @@ const cardVariants = {
 
 const Services = () => {
     return ( 
-        <div className="containerFeature">
+        <div className="containerFeature" >
             <h1>Features/Services</h1>
             <div className="cardContainer">
                 <motion.section 

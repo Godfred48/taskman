@@ -3,6 +3,7 @@ import logo from '../images/logo.svg';
 import loginIcon from '../images/login-icon.svg'
 import '../style/home.css';
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
 
@@ -12,7 +13,7 @@ const Navbar = () => {
         setisOpen(!isOpen);
     }
     return ( 
-       <nav className="Navbar">
+       <nav className="Navbar" >
         <section className="logo">
             <img src={logo} alt="logo" />
              <motion.button className='menuButton'
@@ -40,12 +41,12 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <section className="nav-link desktop">
-            <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Features</li>
-            <li>Contact</li>
-            </ul>
+        <ul>
+            <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
+            <li><Link to="about" smooth={true} duration={500}>About</Link></li>
+            <li><Link to="features" smooth={true} duration={500}>Features</Link></li>
+            <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
+        </ul>
         </section>
 
         <section className={`nav-link ${isOpen ? "show" : "hide"}`}>
@@ -58,10 +59,10 @@ const Navbar = () => {
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
             >
-                <li>Home</li>
-                <li>About</li>
-                <li>Features</li>
-                <li>Contact</li>
+                <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
+                <li><Link to="about" smooth={true} duration={500}>About</Link></li>
+                <li><Link to="features" smooth={true} duration={500}>Features</Link></li>
+                <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
             </motion.ul>
             )}
         </AnimatePresence>

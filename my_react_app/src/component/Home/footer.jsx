@@ -2,10 +2,10 @@ import linkedin from '../images/linkedin.svg';
 import twitter  from '../images/twitter-x.svg';
 import github from '../images/github.svg';
 import '../style/home.css';
-import '../script/date';
+import DateComponent from '../script/date';
 const Footer = () => {
     return ( 
-        <footer className="footermain">
+        <footer className="footermain" >
             <div className="footerContainer">
                 <section>
                     <h3>Contact/Locate Us</h3>
@@ -17,17 +17,14 @@ const Footer = () => {
                 </section>
                 <section>
                     <h3>Our Socials</h3>
-                    <div class="socials">
-                        <a href="https://www.linkedin.com/in/godfred-agbogah-001559263/" target="_blank"><img src={linkedin} alt="linkedin" /></a>
-                        <a href="https://github.com/Godfred48" target="_blank"><img src={github} alt="linkedin" /></a>
-                        <a href="" target="_blank"><img src={twitter} alt="linkedin" /></a>
+                    <div className="socials">
+                        <a href="https://www.linkedin.com/in/godfred-agbogah-001559263/" target="_blank"  rel="noopener noreferrer"><img src={linkedin} alt="linkedin" /></a>
+                        <a href="https://github.com/Godfred48" target="_blank"  rel="noopener noreferrer"><img src={github} alt="linkedin" /></a>
+                        <a href="https://x.com" target="_blank"  rel="noopener noreferrer"><img src={twitter} alt="linkedin" /></a>
                     </div>
                 </section>
             </div>
-            <div className='date'>
-                <p>&copy;<span id="currentyear"></span> TaskMan. Accra-Ghana.</p>
-                <p id="lastModified"></p>
-            </div>
+            <DateComponent />
         </footer>
      );
 }
