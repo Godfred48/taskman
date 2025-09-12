@@ -7,12 +7,13 @@
     --font-color4: #38d6ff;
 }
 
+
+
 .AuthNav{
     background-color: var(--font-color2);
     height:100px;
-    display: grid;
-    grid-template-columns: 1fr 13fr;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     border-bottom: none;
 }
@@ -24,44 +25,48 @@
 }
 
 .taskman{
+    flex: 1;
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-right: 50px;
 }
 
 
-.login-form{
-    display:grid;
+.login-form {
+    flex: 1; /* take available space after navbar */
+    display: flex;
     justify-content: center;
-    align-items:center;
-    height: 100vh;
- 
-}
+    align-items: center;
+  }
 
-.container{
-    display:grid;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers vertically */
+    align-items: center;     /* centers horizontally */
     background-color: #000E3E;
-    grid-template-columns: 1fr;
     border: 1px solid black;
-    height: 300px;
-    width: 300px;
-    align-items:center;
-    justify-content:center;
-}
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px; /* some breathing space inside */
+  }
 
-.inner-container{
-    justify-content:center;
-    align-items:center;
-    margin : 10px;
-    
-}
+  .inner-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* center within container */
+    align-items: center;
+    margin: 0; /* remove unnecessary top margin */
+  }
 
-.main-container{
-    display:grid;
-    
-}
-
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* clean spacing between elements */
+    width: 100%;
+  }
 input{
     margin-bottom:5px;
     height:30px;
@@ -83,15 +88,22 @@ button{
     border-radius: 10px;
 }
 
-.caption{
-   justify-content: center;
-   text-align: center;
-}
+.caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* space between icon and text */
+    margin-bottom: 20px;
+    transform: translateY(-10px); /* shift a little upward */
+  }
 
-.upperboarder{
-    background-color: #04B504;
-    margin-top :0px;
-}
+  .login-title {
+    font-family: var(--headerFont);
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+  }
+
 
 .verify{
     display:grid;
@@ -118,3 +130,22 @@ button{
 .error{
     color:red;
 }
+
+
+.auth {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* navbar top + form below */
+    overflow: hidden;
+  }
+.backimage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* background behind everything */
+  }

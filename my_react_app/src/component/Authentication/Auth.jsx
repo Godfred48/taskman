@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import '../style/Auth.css';
 import Navbar from "./navbar";
-import Hero from "./hero";
 import { AuthContext } from "../context/AuthContext";
+import Blueback from '../images/blueback.webp';
 const AuthPage = () => {
 
     //assigning use State values
@@ -57,52 +57,56 @@ const AuthPage = () => {
     }
 
     return (  
-        <div>
+        <div className="auth">
             <Navbar />
-            <Hero />
-            <form className="login-form">
-            <div class="container">
-                <div class="upperboarder">
-                        <p></p>
-                </div>
-                <div class="inner-container">
-                    <section class="main-container">
-                        {/*Email Input*/}
-                        <div class="caption"><img src={userIcon} alt="user-logo" /> </div>
-                        {/*signal*/}
-                        {error 
-                            && 
-                            <div class="error"><p>{error}</p></div>
-                        }
-                        {loading && <div class="loading"><p>Please wait, logging in...</p></div>}
-                        <input 
-                        type = "email"
-                        placeholder ="Email"
-                        value ={email}
-                        onChange = {(e) => setEmail(e.target.value)}
-                        />
+                {/*background8*/}
+                <img src={Blueback} className="backimage" alt="background" />
 
-                        {/*Password*/}
-                        <input 
-                        type = "password"
-                        placeholder ="Password"
-                        value ={password}
-                        onChange = {(e) => setPassword(e.target.value)}
-                        />
-                        
-                        {/*button*/}
-                        <button onClick={handleLogin} diabled={loading}>
-                            {loading ? "Logging in..." : "Login"}
-                        </button>
-                        <div  class="verify"><p>Dont have an accout?</p> <button>Create account</button></div>
-                        
-                    </section>
+                <form className="login-form">
+                <div class="container">
+               
+                    <div class="inner-container">
+                        <section class="main-container">
+                            {/*Email Input*/}
+                            <div class="caption">
+                                <img src={userIcon} alt="user-logo" />
+                                <h2 className="login-title">Login</h2>
+                            
+                            </div>
+                            {/*signal*/}
+                            {error 
+                                && 
+                                <div class="error"><p>{error}</p></div>
+                            }
+                            {loading && <div class="loading"><p>Please wait, logging in...</p></div>}
+                            <input 
+                            type = "email"
+                            placeholder ="Email"
+                            value ={email}
+                            onChange = {(e) => setEmail(e.target.value)}
+                            />
+
+                            {/*Password*/}
+                            <input 
+                            type = "password"
+                            placeholder ="Password"
+                            value ={password}
+                            onChange = {(e) => setPassword(e.target.value)}
+                            />
+                            
+                            {/*button*/}
+                            <button onClick={handleLogin} diabled={loading}>
+                                {loading ? "Logging in..." : "Login"}
+                            </button>
+                            <div  class="verify"><p>Dont have an accout?</p> <button>Create account</button></div>
+                            
+                        </section>
+                    </div>
+
                 </div>
+                </form>
 
             </div>
-            </form>
-
-        </div>
             
     );
 }
