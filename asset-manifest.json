@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/taskman/static/css/main.2d082c4f.css",
-    "main.js": "/taskman/static/js/main.1bbb0a30.js",
+    "main.css": "/taskman/static/css/main.369886a9.css",
+    "main.js": "/taskman/static/js/main.b181a628.js",
     "static/js/592.77751a5b.chunk.js": "/taskman/static/js/592.77751a5b.chunk.js",
     "static/media/blueback.webp": "/taskman/static/media/blueback.86ada962d16029175044.webp",
     "static/media/home.webp": "/taskman/static/media/home.73127e707ed52989dd2e.webp",
@@ -16,12 +16,12 @@
     "static/media/login-icon.svg": "/taskman/static/media/login-icon.764de6d9c602d2f84106a9c2c6e309a4.svg",
     "static/media/user-icon.svg": "/taskman/static/media/user-icon.49fc0ff006097e120b20f2954c772c99.svg",
     "static/media/twitter-x.svg": "/taskman/static/media/twitter-x.2be9950e5fabc3452d6b1209695cbbc7.svg",
-    "main.2d082c4f.css.map": "/taskman/static/css/main.2d082c4f.css.map",
-    "main.1bbb0a30.js.map": "/taskman/static/js/main.1bbb0a30.js.map",
+    "main.369886a9.css.map": "/taskman/static/css/main.369886a9.css.map",
+    "main.b181a628.js.map": "/taskman/static/js/main.b181a628.js.map",
     "592.77751a5b.chunk.js.map": "/taskman/static/js/592.77751a5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d082c4f.css",
-    "static/js/main.1bbb0a30.js"
+    "static/css/main.369886a9.css",
+    "static/js/main.b181a628.js"
   ]
 }
