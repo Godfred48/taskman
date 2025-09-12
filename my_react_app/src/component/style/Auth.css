@@ -140,6 +140,7 @@ button{
     flex-direction: column; /* navbar top + form below */
     overflow: hidden;
   }
+
 .backimage {
     position: absolute;
     top: 0;
@@ -148,4 +149,19 @@ button{
     height: 100%;
     object-fit: cover;
     z-index: -1; /* background behind everything */
+  }
+
+
+  @media (max-width:800px){
+    .login-form {
+        flex: 1; /* take available space after navbar */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin :0 30px;
+      }
+
+
+
+
   }
