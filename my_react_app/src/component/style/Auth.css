@@ -31,6 +31,13 @@
     align-items: center;
 }
 
+p{
+    font-family: var(--paragraphFont);
+}
+
+button{
+    font-family: var(--paragraphFont);
+}
 
 .login-form {
     flex: 1; /* take available space after navbar */
@@ -77,6 +84,12 @@ input{
 
 input::placeholder{
     color:white;
+    font-family: var(--paragraphFont);
+}
+
+input{
+    font-family: var(--paragraphFont);
+    font-size: 18px;
 }
 
 button{
@@ -159,7 +172,7 @@ button{
         justify-content: center;
         align-items: center;
         margin :0 30px;
-      }
+    }
 
 
 
