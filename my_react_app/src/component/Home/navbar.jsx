@@ -5,14 +5,22 @@ import '../style/home.css';
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from 'react-scroll';
 import { Link as RouterLink} from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
+
 
 const Navbar = () => {
 
     const [isOpen, setisOpen] = useState(false);
+    const {user , logout} = useContext(AuthContext);
+    const navigate = useNavigate();
     //handles the menu button
     const handleOpen = ()=>{
         setisOpen(!isOpen);
     }
+
+ 
     return ( 
        <nav className="Navbar" >
         <section className="logo">
@@ -68,11 +76,27 @@ const Navbar = () => {
             )}
         </AnimatePresence>
         </section>
-        <section className={`loginButton ${isOpen ? "show" :"hide"}`}>
-            <RouterLink to="/login" className="login-link">
-             <button className="login"><img src={loginIcon} alt="iconlogo"/><p>Login</p></button>
-            </RouterLink>
-        </section>
+        {user ?(
+            <>
+                <section className={`loginButton ${isOpen ? "show" :"hide"}`}>
+                    <RouterLink to="/login" className="login-link">
+                    <button className="login" onClick={logout}><p>Logout</p></button>
+                    </RouterLink>
+                    <RouterLink to="/dashboard" className="login-link">
+                    <button className="login" onClick={()=>navigate("/dashboard") }><p>Dashboard</p></button>
+                    </RouterLink>
+                 </section> 
+            </>
+        ):(
+            <>
+                <section className={`loginButton ${isOpen ? "show" :"hide"}`}>
+                    <RouterLink to="/login" className="login-link">
+                    <button className="login"><img src={loginIcon} alt="iconlogo"/><p>Login</p></button>
+                    </RouterLink>
+                 </section>            
+            </>
+        )}
+            
         
         
        </nav>

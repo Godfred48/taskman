@@ -71,7 +71,7 @@ nav section ul li:hover{
 }
 
 nav section button{
-    width:100px;
+    width:110px;
     height:40px;
     display: flex;
     align-items: center;
@@ -81,6 +81,13 @@ nav section button{
     border-radius: 20px;
     text-decoration: none;
 }
+
+.loginButton{
+    display: flex;
+    gap:10px;
+}
+
+
 
 nav section button p{
    margin-left:5px;
@@ -148,8 +155,9 @@ nav section button p{
         display: grid;
         z-index: 3;
         top:60%;
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
         gap:20px;
+        grid-auto-flow: column;
         
     }
 
@@ -306,9 +314,10 @@ nav section button p{
         text-align: center;
         margin-right: 40px;
         font-size: 18px;
-     }
-
-
+    }
+     
+    
+   
 
       
       
@@ -359,6 +368,7 @@ nav section button p{
         color:var(--font-color3);
         border-bottom: 1px solid var(--font-color3);
     } 
+
 
     .logo{
         display:grid;
@@ -436,6 +446,18 @@ nav section button p{
        margin-right: 40px;
        font-size: 18px;
     }
+
+    .loginButton.show {
+        display: flex; /* or block depending on your layout */
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+      
+    .loginButton.hide {
+        display: none;
+    }
+
 
 
 

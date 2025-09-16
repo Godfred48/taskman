@@ -1,7 +1,10 @@
 import heroImage from '../images/home.webp';
 import {motion} from "framer-motion";
 import { Link as RouterLink } from "react-router-dom";
+import { useContext } from 'react';
+import { AuthContext } from '../context/AuthContext';
 const Hero = () => {
+    const {user} = useContext(AuthContext);
     return (  
         <div className="hero">
             {/*background picture*/}
@@ -27,8 +30,14 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5, ease: "easeOut" }} // appear after heading
             >
-                <RouterLink to="/login">
-                    <motion.button 
+                {user ?(
+                    <>
+                    
+                    </>
+                ):(
+                    <>
+                        <RouterLink to="/login">
+                             <motion.button 
                             className="button1"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -36,6 +45,9 @@ const Hero = () => {
                             <span>Get Started</span>
                     </motion.button>
                 </RouterLink>
+                    </>
+                )}
+                
 
                 <motion.button 
                     className="button2"

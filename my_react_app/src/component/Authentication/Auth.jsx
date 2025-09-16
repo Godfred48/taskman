@@ -7,6 +7,8 @@ import '../style/Auth.css';
 import Navbar from "./navbar";
 import { AuthContext } from "../context/AuthContext";
 import Blueback from '../images/blueback.webp';
+import { Link as RouterLink} from "react-router-dom";
+import Arrow from '../images/arrow.svg';
 const AuthPage = () => {
 
     //assigning use State values
@@ -118,6 +120,11 @@ const AuthPage = () => {
 
                 <form className="login-form">
                 <div class="container">
+                    <div className='arrowBack'>
+                        <RouterLink to="/"className='router-link'>
+                        <img src={Arrow} alt="arrow" />
+                        </RouterLink>
+                    </div>
                 
                     <div class="inner-container">
                         <section class="main-container">

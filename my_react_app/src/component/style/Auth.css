@@ -53,7 +53,7 @@ button{
     align-items: center;     /* centers horizontally */
     background-color: #000E3E;
     border: 1px solid black;
-    height: 500px;
+    height: 550px;
     width: 400px;
     border-radius: 10px;
     padding: 20px; /* some breathing space inside */
@@ -164,6 +164,10 @@ button{
     z-index: -1; /* background behind everything */
   }
 
+  .arrowBack {
+    display:none;
+  }
+
 
   @media (max-width:800px){
     .login-form {
@@ -171,9 +175,47 @@ button{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin :0 30px;
+        height: 100vh;
     }
 
+    .container{
+        width: 100%;
+        height: 100vh;
+        border-radius:0;
+        position: relative; /* so arrowBack can position inside */
+
+    }
+
+    .inner-container {
+        width: 100%;
+        height: 100%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .AuthNav{
+        display: none;
+    
+    }
+    
+        .auth,
+        .login-form,
+        .container {
+        height: 100dvh; /* true full height, even on mobile */
+    }
+
+    .arrowBack {
+        position: absolute;
+        padding:10px;
+        top: 15px;
+        left: 15px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        z-index: 2; /* keep above background */
+      }
 
 
 
