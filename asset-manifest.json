@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/taskman/static/css/main.18c57a63.css",
-    "main.js": "/taskman/static/js/main.bc208339.js",
+    "main.js": "/taskman/static/js/main.2b698a84.js",
     "static/js/592.77751a5b.chunk.js": "/taskman/static/js/592.77751a5b.chunk.js",
     "static/media/blueback.webp": "/taskman/static/media/blueback.86ada962d16029175044.webp",
     "static/media/home.webp": "/taskman/static/media/home.73127e707ed52989dd2e.webp",
@@ -18,11 +18,11 @@
     "static/media/user-icon.svg": "/taskman/static/media/user-icon.49fc0ff006097e120b20f2954c772c99.svg",
     "static/media/twitter-x.svg": "/taskman/static/media/twitter-x.2be9950e5fabc3452d6b1209695cbbc7.svg",
     "main.18c57a63.css.map": "/taskman/static/css/main.18c57a63.css.map",
-    "main.bc208339.js.map": "/taskman/static/js/main.bc208339.js.map",
+    "main.2b698a84.js.map": "/taskman/static/js/main.2b698a84.js.map",
     "592.77751a5b.chunk.js.map": "/taskman/static/js/592.77751a5b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18c57a63.css",
-    "static/js/main.bc208339.js"
+    "static/js/main.2b698a84.js"
   ]
 }
