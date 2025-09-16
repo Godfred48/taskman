@@ -74,43 +74,38 @@ const AuthPage = () => {
     };
     
     //function that processes the login button
-    const handleLogin=()=>{
-        setLoading(true);
-
-        //checking if all fields are filled 
-        if(!email || !password){
-            setError("Please fill all fields");
-            setLoading(false)
-            return;
-        }
-
-        //check if user exixt in database
-        const foundUser = users.find((user)=>
-            user.email === email && user.password ===password
-        );
-
-        //if user dosent exist
-        if (!foundUser){
-            setError("Invalid email or pasword");
+   
+        const handleLogin = (e) => {
+            e.preventDefault(); // prevent page reload
+            setLoading(true);
+          
+            if (!email || !password) {
+              setError("Please fill all fields");
+              setLoading(false);
+              return;
+            }
+          
+            const foundUser = users.find(
+              (user) => user.email === email && user.password === password
+            );
+          
+            if (!foundUser) {
+              setError("Invalid email or password");
+              setLoading(false);
+              return;
+            }
+          
+            // save to AuthContext + localStorage
+            login(foundUser);
+          
+            setError("");
             setLoading(false);
-            return;
-        }
-
-
-         //if exist save into localstorage
-        console.log("Found user:", foundUser);
-        login(foundUser);
-
-        //if fieldsare correct and submitted 
-        setError("");
-
-        setTimeout(()=>{
-            console.log ("Login successful")
-            //navigvte user to home 
+          
+            // ✅ navigate immediately after login
             navigate("/");
-            setLoading(false);
-        }, 2000);
-    }
+          };
+          
+    
 
     return (  
         <div className="auth">
@@ -159,7 +154,7 @@ const AuthPage = () => {
                             />
                             
                             {/*button*/}
-                            <button onClick={handleLogin} diabled={loading}>
+                            <button onClick={handleLogin} disabled={loading}>
                                 {loading ? "Logging in..." : "Login"}
                             </button>
                             <div  class="verify"><p>Dont have an accout?</p> <button onClick={()=>{setisLogin(false);setError("");}}>Create account</button></div>
