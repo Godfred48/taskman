@@ -1,0 +1,43 @@
+:root{
+    --headerfont: "Bebas Neue", sans-serif;
+    --paragraphFont : "Barlow Semi Condensed", sans-serif;
+    --font-color1: #38d6ff1a;
+    --font-color2: #98c5e9;
+    --font-color3: #001838;
+    --font-color4: #38d6ff;
+}
+
+.top-nav{
+    background-color: var(--font-color2);
+    display:grid ;
+    grid-template-columns: 100px 2fr 0.5fr;
+    justify-content: center;
+    align-items: center;
+    height:80px;
+}
+
+.top-nav .dashboard-logo{
+   margin-left: 30px;}
+
+.top-nav h2{
+    font-family: var(--headerfont);
+    color:#001838;
+    font-size: 2rem;
+}
+
+.top-nav button{
+    height:40px;
+    width: 100px;
+    display:flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--font-color3);
+    gap:5px;
+}
+
+.top-nav p{
+  color: var(--font-color4);
+  font-size: 20px;
+
+}
