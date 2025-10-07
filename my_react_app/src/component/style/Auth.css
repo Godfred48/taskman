@@ -170,12 +170,18 @@ button{
 
 
   @media (max-width:800px){
+
+    .backimage {
+        display: none;
+      }
+
     .login-form {
         flex: 1; /* take available space after navbar */
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
+        margin: 0;
     }
 
     .container{
