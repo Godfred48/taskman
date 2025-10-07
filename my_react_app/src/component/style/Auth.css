@@ -171,14 +171,6 @@ button{
 
   @media (max-width:800px){
 
-    .backimage {
-      display: none;
-      }
-
-      body {
-        background-color: var(--font-color3);
-      }
-
     .login-form {
         flex: 1; /* take available space after navbar */
         display: flex;
@@ -186,6 +178,8 @@ button{
         align-items: center;
         height: 100vh;
         margin: 0;
+        overflow: hidden;
+    
     }
 
     .container{
@@ -193,6 +187,7 @@ button{
         height: 100vh;
         border-radius:0;
         position: relative; /* so arrowBack can position inside */
+        overflow: hidden;
 
     }
 
@@ -203,6 +198,7 @@ button{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
       }
 
       .AuthNav{
