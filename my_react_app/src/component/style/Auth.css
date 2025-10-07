@@ -209,7 +209,7 @@ button{
         .auth,
         .login-form,
         .container {
-        height: 100dvh; /* true full height, even on mobile */
+        height: 100vh; /* true full height, even on mobile */
     }
 
     .arrowBack {
