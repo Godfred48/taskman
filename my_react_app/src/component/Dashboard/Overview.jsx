@@ -13,7 +13,7 @@ const Overview = () => {
         <div>
             <Header sidebarOpen={sidebarOpen} handlesidebarButton={handlesidebarButton}/>
             <Sidebar />
-            {!sidebarOpen && <Smsidebar />}
+            <Smsidebar sidebarOpen={!sidebarOpen} />
         </div>
         
        
