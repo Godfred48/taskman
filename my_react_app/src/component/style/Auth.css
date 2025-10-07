@@ -172,7 +172,11 @@ button{
   @media (max-width:800px){
 
     .backimage {
-      background-color: var(--font-color3);
+      display: none;
+      }
+
+      body {
+        background-color: var(--font-color3);
       }
 
     .login-form {
