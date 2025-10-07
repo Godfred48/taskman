@@ -1,12 +1,9 @@
 import icon from "../images/tasklogo.svg";
 import "../style/Dashboard.css";
-import { useState } from 'react';
+
  
-const Header = () => {
-        const [sidebarOpen, setsidebarOpen] = useState(true)
-        const handlesidebarButton =()=>{
-                setsidebarOpen(!sidebarOpen)
-        }
+const Header = ({sidebarOpen,handlesidebarButton}) => {
+       
 
     return (
             <header className="top-nav">

@@ -47,6 +47,39 @@
   
 }
 
+/* Style for side bar  */
+.sidebar{
+    background-color: var(--font-color3);
+    height: calc(100vh - 80px);
+    width: 215px;
+    position:fixed;
+    top: 80px;
+    left: 0;
+}
+
+.sidebar ul{
+ list-style-type: none;
+ font-family: var(--paragraphFont);
+ font-size: 20px;
+ color:var(--font-color4);
+ padding: 0;
+ 
+}
+
+.sidebar ul li{
+    padding : 10px 0;
+    cursor:pointer;
+    margin-left:10px;
+    margin: 0;
+    text-align: center;
+   }
+
+   .sidebar ul li:hover{
+    background-color: rgba(204, 204, 204, 0.562);
+   }
+
+
+
 
 
 
@@ -82,4 +115,45 @@
             color: var(--font-color3);
             cursor:pointer;
         }
+
+        /* side bar on small screen */
+        /* Style for side bar  */
+        .sidebar{
+           display: none;
+        }
+
+        /* Style for side bar  */
+    .smsidebar{
+        background-color: var(--font-color3);
+        height: calc(100vh - 80px);
+        width: 100%;
+        position:fixed;
+        top: 80px;
+        left: 0;
+}
+
+.smsidebar ul{
+    list-style-type: none;
+    font-family: var(--paragraphFont);
+    font-size: 20px;
+    color:var(--font-color4);
+    padding: 0;
+    
+   }
+   
+   .smsidebar ul li{
+       padding : 15px 0;
+       cursor:pointer;
+       margin-left:10px;
+       margin: 0;
+       text-align: center;
+       border-bottom: 1px solid  var(--font-color2);
+      }
+   
+      .smsidebar ul li:hover{
+       background-color: rgba(204, 204, 204, 0.562);
+      }
+   
+   
+   
 }
