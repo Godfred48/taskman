@@ -78,6 +78,33 @@
     background-color: rgba(204, 204, 204, 0.562);
    }
 
+   .main-content{
+    margin-left:270px;
+    color: var(--font-color3);
+    font-family: var(--paragraphFont);
+   }
+
+   .sec1{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .addtext{
+        font-size: 1.rem;
+        font-weight: bold;
+        font-family: var(--paragraphFont);
+       }
+    
+       .main-content aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+       }
+       
+
 
 
 
@@ -153,6 +180,15 @@
       .smsidebar ul li:hover{
        background-color: rgba(204, 204, 204, 0.562);
       }
+
+      .main-content{
+        margin:20px;
+        color: var(--font-color3);
+        font-family: var(--paragraphFont);
+       }
+
+       
+    
    
    
    
