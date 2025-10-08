@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/taskman/static/css/main.2d7e2c4e.css",
-    "main.js": "/taskman/static/js/main.c52caf03.js",
+    "main.css": "/taskman/static/css/main.7f59cd0b.css",
+    "main.js": "/taskman/static/js/main.2d713957.js",
     "static/js/592.77751a5b.chunk.js": "/taskman/static/js/592.77751a5b.chunk.js",
     "static/media/blueback.webp": "/taskman/static/media/blueback.86ada962d16029175044.webp",
     "static/media/home.webp": "/taskman/static/media/home.73127e707ed52989dd2e.webp",
@@ -17,13 +17,14 @@
     "static/media/arrowback.svg": "/taskman/static/media/arrowback.94b1a291563f0c4f89fecd29d364d153.svg",
     "static/media/login-icon.svg": "/taskman/static/media/login-icon.764de6d9c602d2f84106a9c2c6e309a4.svg",
     "static/media/user-icon.svg": "/taskman/static/media/user-icon.49fc0ff006097e120b20f2954c772c99.svg",
+    "static/media/plus-circle.svg": "/taskman/static/media/plus-circle.cb8fe90dbacba57b3f4e387682422f45.svg",
     "static/media/twitter-x.svg": "/taskman/static/media/twitter-x.2be9950e5fabc3452d6b1209695cbbc7.svg",
-    "main.2d7e2c4e.css.map": "/taskman/static/css/main.2d7e2c4e.css.map",
-    "main.c52caf03.js.map": "/taskman/static/js/main.c52caf03.js.map",
+    "main.7f59cd0b.css.map": "/taskman/static/css/main.7f59cd0b.css.map",
+    "main.2d713957.js.map": "/taskman/static/js/main.2d713957.js.map",
     "592.77751a5b.chunk.js.map": "/taskman/static/js/592.77751a5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d7e2c4e.css",
-    "static/js/main.c52caf03.js"
+    "static/css/main.7f59cd0b.css",
+    "static/js/main.2d713957.js"
   ]
 }
