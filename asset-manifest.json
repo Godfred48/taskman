@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/taskman/static/css/main.58ae1b44.css",
-    "main.js": "/taskman/static/js/main.f533f082.js",
+    "main.css": "/taskman/static/css/main.8559c144.css",
+    "main.js": "/taskman/static/js/main.177d8fe3.js",
     "static/js/592.77751a5b.chunk.js": "/taskman/static/js/592.77751a5b.chunk.js",
     "static/media/aiassist.png": "/taskman/static/media/aiassist.30c50e9dd49b638166c8.png",
     "static/media/charts.jpeg": "/taskman/static/media/charts.6ee6af2349d458a73f72.jpeg",
@@ -23,12 +23,12 @@
     "static/media/user-icon.svg": "/taskman/static/media/user-icon.49fc0ff006097e120b20f2954c772c99.svg",
     "static/media/plus-circle.svg": "/taskman/static/media/plus-circle.cb8fe90dbacba57b3f4e387682422f45.svg",
     "static/media/twitter-x.svg": "/taskman/static/media/twitter-x.2be9950e5fabc3452d6b1209695cbbc7.svg",
-    "main.58ae1b44.css.map": "/taskman/static/css/main.58ae1b44.css.map",
-    "main.f533f082.js.map": "/taskman/static/js/main.f533f082.js.map",
+    "main.8559c144.css.map": "/taskman/static/css/main.8559c144.css.map",
+    "main.177d8fe3.js.map": "/taskman/static/js/main.177d8fe3.js.map",
     "592.77751a5b.chunk.js.map": "/taskman/static/js/592.77751a5b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58ae1b44.css",
-    "static/js/main.f533f082.js"
+    "static/css/main.8559c144.css",
+    "static/js/main.177d8fe3.js"
   ]
 }
