@@ -67,8 +67,7 @@
  font-family: var(--paragraphFont);
  font-size: 20px;
  color:var(--font-color4);
- padding: 0;
- 
+ padding: 0; 
 }
 
 .sidebar ul li{
@@ -77,6 +76,12 @@
     margin-left:10px;
     margin: 0;
     text-align: center;
+    text-decoration: none;  
+   }
+
+   .sidebar ul li a{
+    text-decoration: none;  
+    color: var(--font-color4);
    }
 
    .sidebar ul li:hover{
