@@ -88,6 +88,18 @@
     background-color: rgba(204, 204, 204, 0.562);
    }
 
+   .sidebar ul li img {
+    margin-right: 10px;
+  }
+
+  .sidebar ul li a{
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   color: var(--font-color4);}
+
+
    .main-content{
     margin-left:270px;
     margin-top: 80px;
@@ -241,6 +253,17 @@
        margin: 0;
        text-align: center;
        border-bottom: 1px solid  var(--font-color2);
+      }
+
+      .smsidebar ul li a{
+       text-decoration: none;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+      color: var(--font-color4);}
+
+      .smsidebar ul li img {
+        margin-right: 10px;
       }
    
       .smsidebar ul li:hover{
