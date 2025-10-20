@@ -1,5 +1,5 @@
 import "../style/Dashboard.css";
-const Sidebar = () => {
+const Sidebar = ({logout}) => {
     return (  
         <aside className="sidebar">
             <ul>
@@ -7,7 +7,7 @@ const Sidebar = () => {
                 <li>Dashboard</li>
                 <li>Tasks</li>
                 <li>Setting</li>
-                <li>Logout</li>
+                <li onClick={logout}>Logout</li>
             </ul>
         </aside>
     );

@@ -12,15 +12,15 @@ const Overview = () => {
     }
 
     // in context userdata in localstorage has been assigned as user 
-    const {user} = useContext(AuthContext);
+    const {user,logout} = useContext(AuthContext);
 
 
     return (
         <div>
-            <Header sidebarOpen={sidebarOpen} handlesidebarButton={handlesidebarButton}/>
-            <Sidebar />
-            <Smsidebar sidebarOpen={!sidebarOpen} />
-            <Dashcontent user={user}/>
+            <Header sidebarOpen={sidebarOpen} handlesidebarButton={handlesidebarButton} />
+            <Sidebar logout={logout}/>
+            <Smsidebar logout={logout} sidebarOpen={!sidebarOpen} />
+            <Dashcontent user={user} />
         </div>
         
        

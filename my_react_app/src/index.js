@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 import { AuthProvider } from './component/context/AuthContext';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode> {/*wrapped the context in the apps so that every part of the app can use the userdetailes in the localStorge */}

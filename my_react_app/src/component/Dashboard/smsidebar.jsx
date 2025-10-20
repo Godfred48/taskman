@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import "../style/Dashboard.css";
 
-const Smsidebar = ({ sidebarOpen }) => {
+const Smsidebar = ({ sidebarOpen,logout }) => {
   return (
     <AnimatePresence>
       {sidebarOpen && (
@@ -17,7 +17,7 @@ const Smsidebar = ({ sidebarOpen }) => {
             <li>Dashboard</li>
             <li>Tasks</li>
             <li>Settings</li>
-            <li>Logout</li>
+            <li onClick={logout}>Logout</li>
           </ul>
         </motion.aside>
       )}
